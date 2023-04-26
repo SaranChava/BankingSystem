@@ -618,6 +618,7 @@ ALTER TABLE `passbook_1011950`
 ALTER TABLE `staff`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
+
 CREATE TABLE loan_requests (
   `id` INT NOT NULL AUTO_INCREMENT,
   `type_of_loan` ENUM('educational', 'home', 'vehicle', 'business', 'personal') NOT NULL,
@@ -632,7 +633,8 @@ INSERT INTO loan_requests (type_of_loan, loan_amount, annual_income, Customer_id
 
 CREATE TABLE customer_service(
   `id` INT NOT NULL AUTO_INCREMENT,
-  `status` ENUM('pending', 'resolved') NOT NULL,
+  `status` ENUM('pending', 'resolved') NOT NULL default 'pending',
+  `type` ENUM('credit','payment','loan','other') default 'other',
   `title` varchar(255) NOT NULL,
   `description` varchar(255),
   PRIMARY KEY (`id`)
