@@ -10,8 +10,13 @@
 <input type="text" name="holder_name" placeholder="Name of the account holder"><br>
 <input type="text" name="dob" placeholder="Date of Birth" onfocus="(this.type='date')"><br>
 <input type="text" name="SSN" placeholder="SSN"><br>
+<<<<<<< HEAD
 <input type="text" name="mob" placeholder="Mobile Number"><br>
 <input type="text" name="acc_no" placeholder="Account Number"><br>
+=======
+<input type="text" name="mob" placeholder="Registered Mobile (10 Digit)"><br>
+<input type="text" name="acc_no" placeholder="Account No"><br>
+>>>>>>> 4915c8b1c66bd54d737f780d9c5b090e97865de9
 <input type="submit" name ="dbt_crd_submit" value"Submit" ><br>
 <form>
 </div>
@@ -62,12 +67,20 @@ if(isset($_POST['dbt_crd_submit'])){
         }
         elseif($dob != $row['DOB']){
 
+<<<<<<< HEAD
             echo '<script>alert("Incorrect Date of Birth")</script>';
+=======
+            echo '<script>alert("Incorrect Date of Birth\nPlease enter Date of Birth as on SSN Card")</script>';
+>>>>>>> 4915c8b1c66bd54d737f780d9c5b090e97865de9
     
         }
         elseif($SSN != $row['SSN']){
 
+<<<<<<< HEAD
             echo '<script>alert("SSN number not found")</script>';
+=======
+            echo '<script>alert("Incorrect SSN Number")</script>';
+>>>>>>> 4915c8b1c66bd54d737f780d9c5b090e97865de9
 
         }
      
