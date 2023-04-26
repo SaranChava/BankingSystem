@@ -45,6 +45,11 @@
                                 <span class="item">Apply Loans</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="#">
+                                <span class="item">Customer Care</span>
+                            </a>
+                        </li>
                     </ul>
         </div>
         </div>
