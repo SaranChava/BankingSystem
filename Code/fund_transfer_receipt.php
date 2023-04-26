@@ -32,6 +32,7 @@ header("location:customer_login.php");
 </head>
 <body>
 <?php
+	   include 'customer_profile_sidebar.php';
 	   include 'customer_profile_header.php'; 
  ?>
  

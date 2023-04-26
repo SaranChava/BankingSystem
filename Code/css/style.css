@@ -281,7 +281,6 @@ body {
     font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0px;
     width: 100%;
-    height: 100%;
   }
   
   @keyframes slider {
@@ -872,8 +871,8 @@ select {
   /* } */
   
   .acc_details {
-    width: 25%;
-    height: 45%;
+    width: 16%;
+    height: 100vh;
     background-color: rgb(242, 242, 242);
     float: right;
     padding: 2%;
@@ -894,9 +893,9 @@ select {
   }
   
   .statement {
-    height: 45%;
-    width: 58%;
-    margin: 2px;
+    height: 100vh;
+    width: 56%;
+    margin: 2%;
     background-color: rgb(242, 242, 242);
     float: right;
     overflow: auto;

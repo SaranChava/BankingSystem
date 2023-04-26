@@ -1,5 +1,5 @@
 <html>
-<head><title>Active Customers</title>
+<head><title>New Issues</title>
 </head>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <body>
@@ -11,30 +11,21 @@
 
 
 ?>
-<div class="active_customers_container">
+<div class="new_issues_container">
 
 <table border="1px" cellpadding="10">
 			   <th>#</th>
-			   <th>Username</th>
+			   <th>Customer name</th>
 			   <th>Customer ID</th>
 			   <th>Account No.</th>
 			   <th>Mobile No.</th>
-			   <th>Email ID</th>
-			   <th>DOB</th>
-			   <th>Current Balance</th>
-			   <th>SSN</th>
-			   <th>Citizenship</th>
-			   <th>Debit Card No.</th>
-			   <th>CVV</th>
-			   <th>Last_Login</th>
-			   <th>LastTransaction</th>
-			   <th>Account Status</th>
+               <th>Issue ID</th>
+               <th>Issue</th>
+			   
 
 
 <?php
 
-	
-	
 	$sql = "SELECT * from bank_customers";
 	$result = $conn->query($sql);
 	
@@ -53,21 +44,10 @@
 			<td>'.$row['Email_ID'].'</td>
 			<td>'.$row['DOB'].'</td>
 			<td>$'.$row['Current_Balance'].'</td>
-			<td>'.$row['SSN'].'</td>
-			<td>'.$row['CITIZENSHIP'].'</td>
-			<td>'.$row['Debit_Card_No'].'</td>
-			<td>'.$row['CVV'].'</td>
-			<td>'.$row['Last_Login'].'</td>
-			<td>$'.$row['LastTransaction'].'</td>
-			<td>'.$row['Account_Status'].'</td>
 			</tr>';
 	}
-	
-	
 }
-
 ?>
-
 </table>
 </div>
 </body>

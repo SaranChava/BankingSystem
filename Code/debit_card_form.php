@@ -9,7 +9,7 @@
 <form method="POST">
 <input type="text" name="holder_name" placeholder="Account Holder Name"><br>
 <input type="text" name="dob" placeholder="Date of Birth" onfocus="(this.type='date')"><br>
-<input type="text" name="PAN" placeholder="PAN"><br>
+<input type="text" name="SSN" placeholder="SSN"><br>
 <input type="text" name="mob" placeholder="Registered Mobile (10 Digit)"><br>
 <input type="text" name="acc_no" placeholder="Account No"><br>
 <input type="submit" name ="dbt_crd_submit" value"Submit" ><br>
@@ -24,10 +24,10 @@
 if(isset($_POST['dbt_crd_submit'])){
     $holder_name = $_POST['holder_name'];
     $dob = $_POST['dob'];
-    $PAN = $_POST['PAN'];
+    $SSN = $_POST['SSN'];
     $mob = $_POST['mob'];
     $acc_no = $_POST['acc_no'];
-    if(empty($_POST['holder_name']) || empty($_POST['dob']) || empty($_POST['PAN']) ||empty($_POST['mob']) ||empty($_POST['acc_no'])){
+    if(empty($_POST['holder_name']) || empty($_POST['dob']) || empty($_POST['SSN']) ||empty($_POST['mob']) ||empty($_POST['acc_no'])){
 
         echo '<script>alert("No field should be empty")</script>';
     }
@@ -62,12 +62,12 @@ if(isset($_POST['dbt_crd_submit'])){
         }
         elseif($dob != $row['DOB']){
 
-            echo '<script>alert("Incorrect Date of Birth\nPlease enter Date of Birth as on PAN Card")</script>';
+            echo '<script>alert("Incorrect Date of Birth\nPlease enter Date of Birth as on SSN Card")</script>';
     
         }
-        elseif($PAN != $row['pan']){
+        elseif($SSN != $row['SSN']){
 
-            echo '<script>alert("Incorrect PAN Number")</script>';
+            echo '<script>alert("Incorrect SSN Number")</script>';
 
         }
      

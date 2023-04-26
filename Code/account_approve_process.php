@@ -12,7 +12,7 @@
 			$gender = $row['Gender'];
 			$mob_no =$row['Mobile_no'];
 			$landline = $row['Landline_no'];
-			$PAN = $row['PAN'];
+			$SSN = $row['SSN'];
 			$citizenship = $row['CITIZENSHIP'];
 			$dob = 	$row['DOB'];
 			$email = $row['Email_id'];     
@@ -54,7 +54,7 @@
 			IFSC_Code,
 			Mobile_no,
 			Landline_no,
-			PAN,
+			SSN,
 			CITIZENSHIP,
 			DOB,
 			Email_ID,
@@ -80,7 +80,7 @@
 			'$ifsc',
 			'$mob_no',
 			'$landline',
-			'$PAN',
+			'$SSN',
 			'$citizenship',
 			'$dob',
 			'$email',     

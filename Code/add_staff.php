@@ -17,7 +17,7 @@
 <option value="Male">Male</option>
 <option value="Female">Female</option>
 </select><br>
-<input type="text" name="PAN_no" placeholder="pan No" required ><br>
+<input type="text" name="SSN_no" placeholder="SSN No" required ><br>
 <input type="text" name="citizenship" placeholder="CITIZENSHIP No" required><br>
 <input type="date" name="dob" required ><br>
 <select name="dept" required>
@@ -47,16 +47,16 @@ if(isset($_POST['submit'])){
     echo $staff_gender = $_POST['gender'];
     echo $staff_department = $_POST['dept'];
     echo $staff_dob = $_POST['dob'];
-    echo $staff_PAN_no = $_POST['pan_no'];
+    echo $staff_SSN_no = $_POST['SSN_no'];
     echo $staff_citizenship = $_POST['citizenship'];
     echo $staff_address = $_POST['address'];
     
     
     
     $sql = "INSERT INTO bank_staff (Staff_name,Staff_id,Password,Mobile_no,Email_id,Gender,
-    Department,DOB,CITIZENSHIP,PAN,Home_addr)
+    Department,DOB,CITIZENSHIP,SSN,Home_addr)
     VALUES('$staff_name','$staff_id','$staff_password','$staff_mobile_no','$staff_email','$staff_gender',
-    '$staff_department','$staff_dob','$staff_citizenship','$staff_PAN_no','$staff_address') ";
+    '$staff_department','$staff_dob','$staff_citizenship','$staff_SSN_no','$staff_address') ";
 
     if($conn->query($sql) == TRUE){
 

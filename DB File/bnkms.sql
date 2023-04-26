@@ -90,7 +90,6 @@ CREATE TABLE `bank_staff` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-
 INSERT INTO `bank_staff` (`Id`, `staff_name`, `staff_id`, `Password`, `Mobile_no`, `Email_id`, `Gender`, `Department`, `DOB`, `CITIZENSHIP`, `SSN`, `Home_addr`, `Last_login`) VALUES
 (1, 'Sean Smith', '210001', 'password', '7412225696', 'ssmith@gmail.com', 'Male', 'Revenue', '10121995', '379145632000', '14569855', '445 Woodlawn Drive', '27/07/21 03:53:18 PM');
 
