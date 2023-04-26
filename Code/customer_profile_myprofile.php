@@ -15,7 +15,9 @@ background-color: rgba(5, 21, 71,0.4);
 </head>
 <body>
     <?php
-          include 'customer_profile_header.php' ?>
+          include 'customer_profile_sidebar.php';
+          include 'customer_profile_header.php';
+    ?>
           <?php 
         $cust_id= $_SESSION['customer_Id'];
         include 'database_conn.php'; 
