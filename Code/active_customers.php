@@ -22,7 +22,7 @@
 			   <th>Email ID</th>
 			   <th>DOB</th>
 			   <th>Current Balance</th>
-			   <th>PAN</th>
+			   <th>SSN</th>
 			   <th>Citizenship</th>
 			   <th>Debit Card No.</th>
 			   <th>CVV</th>
@@ -53,7 +53,7 @@
 			<td>'.$row['Email_ID'].'</td>
 			<td>'.$row['DOB'].'</td>
 			<td>$'.$row['Current_Balance'].'</td>
-			<td>'.$row['PAN'].'</td>
+			<td>'.$row['SSN'].'</td>
 			<td>'.$row['CITIZENSHIP'].'</td>
 			<td>'.$row['Debit_Card_No'].'</td>
 			<td>'.$row['CVV'].'</td>

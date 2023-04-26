@@ -13,6 +13,7 @@ background-color: rgba(5, 21, 71,0.4);
 </head>
 <body>
 <?php 
+	  include 'customer_profile_sidebar.php';
 	  include 'customer_profile_header.php';
 
 ?>

@@ -4,6 +4,7 @@
 	</head>
 <body>
 	<?php
+			include 'customer_profile_sidebar.php';
 			include 'customer_profile_header.php'; 
 			$sender_mob = $_SESSION['sender_mob'];
 			$hidden_mob_no = substr($sender_mob, 0, 3)."XXXX".substr($sender_mob, 7, 10);
