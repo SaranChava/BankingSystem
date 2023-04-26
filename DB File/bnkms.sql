@@ -64,7 +64,7 @@ CREATE TABLE `bank_customers` (
   `Account_no` varchar(20) DEFAULT NULL,
   `Branch` varchar(50) DEFAULT NULL,
   `IFSC_Code` varchar(50) DEFAULT NULL,
-  `PAN` varchar(10) DEFAULT NULL,
+  `SSN` varchar(10) DEFAULT NULL,
   `CITIZENSHIP` varchar(50) DEFAULT NULL,
   `Current_Balance` float(100,2) DEFAULT NULL,
   `LastTransaction` int(20) DEFAULT '0',
@@ -87,7 +87,7 @@ CREATE TABLE `bank_customers` (
 -- Dumping data for table `bank_customers`
 --
 
-INSERT INTO `bank_customers` (`Id`, `Username`, `Password`, `Customer_Photo`, `Photo_name`, `Customer_ID`, `Gender`, `Landline_no`, `Home_Addr`, `Office_Addr`, `Country`, `State`, `City`, `Pin_code`, `Account_no`, `Branch`, `IFSC_Code`, `PAN`, `CITIZENSHIP`, `Current_Balance`, `LastTransaction`, `Mobile_no`, `Email_ID`, `Debit_Card_No`, `Debit_Card_Pin`, `CVV`, `DOB`, `Area_Loc`, `Nominee_name`, `Nominee_ac_no`, `Last_Login`, `Ac_Opening_Date`, `Account_Status`, `Account_type`) VALUES
+INSERT INTO `bank_customers` (`Id`, `Username`, `Password`, `Customer_Photo`, `Photo_name`, `Customer_ID`, `Gender`, `Landline_no`, `Home_Addr`, `Office_Addr`, `Country`, `State`, `City`, `Pin_code`, `Account_no`, `Branch`, `IFSC_Code`, `SSN`, `CITIZENSHIP`, `Current_Balance`, `LastTransaction`, `Mobile_no`, `Email_ID`, `Debit_Card_No`, `Debit_Card_Pin`, `CVV`, `DOB`, `Area_Loc`, `Nominee_name`, `Nominee_ac_no`, `Last_Login`, `Ac_Opening_Date`, `Account_Status`, `Account_type`) VALUES
 (1, 'Liam Moore', 'password', NULL, NULL, '1010112', 'Male', '1478545555', '464 Edgewood Avenue', '2248 Roosevelt Road', 'India', 'Delhi', 'Delhi', '74100', '1011071010112', 'Demo Branch', '1011', '1478569000', '178965412300', 3650.00, 0, '7415896650', 'liamoore@gmail.com', '421351746137', 6897, NULL, '1995-02-15', 'Demo', 'none', 'none', '27/07/21 02:45:15 PM', '22/07/21 10:07:46 PM', 'ACTIVE', 'Saving'),
 (2, 'William Richards', 'password', NULL, NULL, '1011046', 'Male', '2145896666', '4126 Broadway Street', '2588 Mill Street', 'US', 'California', 'Fresno', '88660', '1011801011046', 'Demo Branch ', '1011', '24580001', '145896587450', 7090.00, 0, '7850001250', 'william@gmail.com', '421360993922', 2957, NULL, '1990-03-15', 'CLF', 'none', 'none', '27/07/21 02:41:02 PM', '26/07/21 10:34:49 PM', 'ACTIVE', 'Saving'),
 (3, 'Christine Moore', 'password', NULL, NULL, '1011426', 'Female', '4520001250', '996 Quincy Street', '4196 Boggess Street', 'US', 'California', 'Los Angeles', '99660', '1011411011426', 'Demo Branch ', '1011', '14701400', '256900000012', 1962.00, 0, '7012500010', 'christine@gmail.com', '421317135335', 2587, NULL, '1995-09-17', 'CLF', 'none', 'none', '26/07/21 11:56:16 PM', '26/07/21 11:24:10 PM', 'ACTIVE', 'Saving'),
@@ -114,7 +114,7 @@ CREATE TABLE `bank_staff` (
   `Department` varchar(50) DEFAULT NULL,
   `DOB` varchar(50) DEFAULT NULL,
   `CITIZENSHIP` varchar(50) DEFAULT NULL,
-  `PAN` varchar(50) DEFAULT NULL,
+  `SSN` varchar(50) DEFAULT NULL,
   `Home_addr` varchar(50) DEFAULT NULL,
   `Last_login` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -123,7 +123,7 @@ CREATE TABLE `bank_staff` (
 -- Dumping data for table `bank_staff`
 --
 
-INSERT INTO `bank_staff` (`Id`, `staff_name`, `staff_id`, `Password`, `Mobile_no`, `Email_id`, `Gender`, `Department`, `DOB`, `CITIZENSHIP`, `PAN`, `Home_addr`, `Last_login`) VALUES
+INSERT INTO `bank_staff` (`Id`, `staff_name`, `staff_id`, `Password`, `Mobile_no`, `Email_id`, `Gender`, `Department`, `DOB`, `CITIZENSHIP`, `SSN`, `Home_addr`, `Last_login`) VALUES
 (1, 'Sean Smith', '210001', 'password', '7412225696', 'ssmith@gmail.com', 'Male', 'Revenue', '10121995', '379145632000', '14569855', '445 Woodlawn Drive', '27/07/21 03:53:18 PM');
 
 -- --------------------------------------------------------
@@ -554,7 +554,7 @@ CREATE TABLE `pending_accounts` (
   `Email_id` varchar(50) DEFAULT 'Nil',
   `Landline_no` varchar(50) DEFAULT 'Nil',
   `DOB` varchar(50) DEFAULT NULL,
-  `PAN` varchar(50) DEFAULT NULL,
+  `SSN` varchar(50) DEFAULT NULL,
   `CITIZENSHIP` varchar(50) DEFAULT NULL,
   `Home_Addr` varchar(100) DEFAULT NULL,
   `Office_Addr` varchar(100) DEFAULT NULL,
