@@ -26,7 +26,7 @@
 					<input type="text" name="email" placeholder="Email id"required />
 					<input type="text" name="landline" placeholder="Landline no"required />
 					<input type="text" name="dob" placeholder="Date of Birth" onfocus="(this.type='date')"required />
-					<input type="text" name="PAN_no" placeholder="PAN(last 4 digits)"required />
+					<input type="text" name="SSN_no" placeholder="SSN(last 4 digits)"required />
 					<input type="text" name="citizenship" placeholder="Passport Number" required />
 					<input class="address" type="text" name="homeaddrs" placeholder="Home Address" required />
 					<input class="address" type="text" name="officeaddrs" placeholder="Office Address"required />
@@ -112,7 +112,7 @@ if(isset($_POST['submit'])){
 	$_SESSION['cust_email']=$_POST['email'];
 	$_SESSION['cust_landline']=$_POST['landline'];
 	$_SESSION['cust_dob']=$_POST['dob'];
-	$_SESSION['cust_PAN=']=$_POST['PAN_no'];
+	$_SESSION['cust_SSN=']=$_POST['SSN_no'];
 	$_SESSION['cust_citizenship']=$_POST['citizenship'];
 	$_SESSION['cust_homeaddrs']=$_POST['homeaddrs'];
 	$_SESSION['cust_officeaddrs']=$_POST['officeaddrs'];

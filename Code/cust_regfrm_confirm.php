@@ -63,7 +63,7 @@ if(isset($_POST['cnfrm-submit'])){
 	$email=$_SESSION['cust_email'];
 	$landline=$_SESSION['cust_landline'];
 	$dob=$_SESSION['cust_dob'];
-	$PAN=$_SESSION['cust_PAN='];
+	$SSN=$_SESSION['cust_SSN='];
 	$citizenship=$_SESSION['cust_citizenship'];
 	$homeaddrs=$_SESSION['cust_homeaddrs'];
 	$officeaddr=$_SESSION['cust_officeaddrs'];
@@ -87,7 +87,7 @@ if(isset($_POST['cnfrm-submit'])){
 	// Email_id,
 	// Landline_no,
 	// DOB,
-	// PAN,
+	// SSN,
 	// CITIZENSHIP,
 	// Home_Addr,
 	// Office_Addr,
@@ -109,7 +109,7 @@ if(isset($_POST['cnfrm-submit'])){
 	// '$email',
 	// '$landline',
 	// '$dob',
-	// '$PAN',
+	// '$SSN',
 	// '$citizenship',
 	// '$homeaddrs',
 	// '$officeaddr',
@@ -148,7 +148,7 @@ Branch,
 IFSC_Code,
 Mobile_no,
 Landline_no,
-PAN,
+SSN,
 CITIZENSHIP,
 DOB,
 Email_ID,
@@ -174,7 +174,7 @@ VALUES (
 '$ifsc',
 '$mob_no',
 '$landline',
-'$PAN',
+'$SSN',
 '$citizenship',
 '$dob',
 '$email',     
