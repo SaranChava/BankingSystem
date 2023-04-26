@@ -21,32 +21,32 @@
             </div>
                     <ul>
                         <li>
-                            <a href="#" class="active">
+                            <a href="modify_acc_details.php" class="active">
                                 <span class="item">Modify Account Details</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="modify_cust_details.php">
                                 <span class="item">Modify Profile</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="debit_card.php">
                                 <span class="item">Debit Card Controls</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="credit_card.php">
                                 <span class="item">Credit Card Controls</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="loans_apply.php">
                                 <span class="item">Apply Loans</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="cust_care.php">
                                 <span class="item">Customer Care</span>
                             </a>
                         </li>
