@@ -5,7 +5,6 @@
 	session_start();
 	
 		include 'database_conn.php';
-		// Update date & time
 		
 		$staff_id=$_SESSION['staff_id'];
 		$last_login=$_SESSION['staff_last_login'];

@@ -1,5 +1,5 @@
 <html>
-<head><title>Apply Debit Card</title>
+<head><title>Apply Credit Card</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>

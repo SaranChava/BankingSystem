@@ -37,6 +37,7 @@ background-color: rgba(5, 21, 71,0.4);
     </form>
 
 </div>
+<?php include 'footer.html';?>
     </body>
 </html>
 <?php  
@@ -65,9 +66,10 @@ if(isset($_POST['change_nom'])){
 		if($roe['Nominee_ac_no'] == $oldnom_ac)
         {
         $sql2="UPDATE bank_customers SET Nominee_name ='$newnom' WHERE bank_customers.Customer_ID=$customer_id ";
-		$sql2="UPDATE bank_customers SET Nominee_ac_no ='$newnom_ac' WHERE bank_customers.Customer_ID=$customer_id ";
-		$conn->query($sql2);
-		if($result=$conn->query($sql2)== TRUE){
+        $conn->query($sql2);
+		$sql3="UPDATE bank_customers SET Nominee_ac_no ='$newnom_ac' WHERE bank_customers.Customer_ID=$customer_id ";
+		$conn->query($sql3);
+		if($result=$conn->query($sql3)== TRUE){
 			
 				
 				echo '<script>alert("Nominee Name and Nominee Account Changed Successfully!")</script>';

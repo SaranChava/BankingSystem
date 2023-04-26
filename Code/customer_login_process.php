@@ -5,9 +5,7 @@ if(isset($_POST['login-btn'])){
 	
 if(isset($_POST['customer_id'])){
 
-  //with hashing
-// $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-
+  
 $password = $_POST['password'];
 $customer_id = $_POST['customer_id'];
 }
