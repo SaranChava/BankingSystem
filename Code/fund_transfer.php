@@ -1,5 +1,6 @@
 <?php
 ob_start();
+include 'customer_profile_sidebar.php';
 include 'customer_profile_header.php' ;
 if($_SESSION['customer_login'] != true){
 

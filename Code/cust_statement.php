@@ -17,7 +17,10 @@
 <body>
     
 	
-        <?php include 'customer_profile_header.php' ?>	
+        <?php 
+            include 'customer_profile_sidebar.php';
+            include 'customer_profile_header.php'; 
+        ?>	
 		
 <?php 
 
