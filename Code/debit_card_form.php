@@ -7,11 +7,16 @@
 <div class="debit_card_form_container">
     <br>
 <form method="POST">
-<input type="text" name="holder_name" placeholder="Account Holder Name"><br>
+<input type="text" name="holder_name" placeholder="Name of the account holder"><br>
 <input type="text" name="dob" placeholder="Date of Birth" onfocus="(this.type='date')"><br>
 <input type="text" name="SSN" placeholder="SSN"><br>
+<<<<<<< HEAD
+<input type="text" name="mob" placeholder="Mobile Number"><br>
+<input type="text" name="acc_no" placeholder="Account Number"><br>
+=======
 <input type="text" name="mob" placeholder="Registered Mobile (10 Digit)"><br>
 <input type="text" name="acc_no" placeholder="Account No"><br>
+>>>>>>> 4915c8b1c66bd54d737f780d9c5b090e97865de9
 <input type="submit" name ="dbt_crd_submit" value"Submit" ><br>
 <form>
 </div>
@@ -29,7 +34,7 @@ if(isset($_POST['dbt_crd_submit'])){
     $acc_no = $_POST['acc_no'];
     if(empty($_POST['holder_name']) || empty($_POST['dob']) || empty($_POST['SSN']) ||empty($_POST['mob']) ||empty($_POST['acc_no'])){
 
-        echo '<script>alert("No field should be empty")</script>';
+        echo '<script>alert("All fields are mandatory")</script>';
     }
     else{
 
@@ -38,7 +43,7 @@ if(isset($_POST['dbt_crd_submit'])){
     $result = $conn->query($sql);
     if($result->num_rows <= 0){
 
-        echo '<script>alert("No Data match with the details provided")</script>';
+        echo '<script>alert("Details mismatch")</script>';
 
     }
     
@@ -47,7 +52,7 @@ if(isset($_POST['dbt_crd_submit'])){
     $row = $result->fetch_assoc();
     if(!is_numeric($mob) || (strlen($mob) > 10 || strlen($mob) < 10)){
 
-        echo '<script>alert("Invalid Mobile Number\nPlease enter 10 Digit registered mobile number")</script>';
+        echo '<script>alert("Mobile Number Invalid\n Please enter 10 Digit registered mobile number")</script>';
 
         }
 
@@ -57,25 +62,31 @@ if(isset($_POST['dbt_crd_submit'])){
         }
         elseif($holder_name != $row['Username']){
 
-            echo '<script>alert("Incorrect Account Holder Name")</script>';
+            echo '<script>alert("User name not found in our records")</script>';
             echo $row['Username'];
         }
         elseif($dob != $row['DOB']){
 
+<<<<<<< HEAD
+            echo '<script>alert("Incorrect Date of Birth")</script>';
+=======
             echo '<script>alert("Incorrect Date of Birth\nPlease enter Date of Birth as on SSN Card")</script>';
+>>>>>>> 4915c8b1c66bd54d737f780d9c5b090e97865de9
     
         }
         elseif($SSN != $row['SSN']){
 
+<<<<<<< HEAD
+            echo '<script>alert("SSN number not found")</script>';
+=======
             echo '<script>alert("Incorrect SSN Number")</script>';
+>>>>>>> 4915c8b1c66bd54d737f780d9c5b090e97865de9
 
         }
      
 
         else{
-            //-------------------------------------------------------------------'
-
-            //Code to Issue Debit Card since all the provided details are correct
+            
             
             $mob_no = $row['Mobile_no'];
            if($row['Debit_Card_No'] === NULL){
@@ -86,32 +97,10 @@ if(isset($_POST['dbt_crd_submit'])){
             if($conn->query($sql) == TRUE ){
 
 
-                //SMS Integration for Debit Card Details  -----------------------------------------------------
-						
-					// require('textlocal.class.php');
-					// $apikey = 'Mzie479SxfY-Z7slYf9AI3zVXCAu0G5skUBQVYOfRU';
-					// $textlocal = new Textlocal(false,false,$apikey);
-					// $numbers = array($mob_no);
-					// $sender = 'TXTLCL';
-					// $message = 'Hello '.$row['Username'].' Your Debit Card No is : '.$debit_card.' with the auto generated pin : '.$debit_card_pin.' Please change this pin as soon as possible';
-
-					
-					// 	try {
-					// 		$result = $textlocal->sendSms($numbers, $message, $sender);
-					// 		print_r($result);
-					// 	} catch (Exception $e) {
-					// 		die('Error: ' . $e->getMessage());
-					// 	}
-						
-		//--------------------------------------------------------------------------------------				
-		//--------------------------------------------------------------------------------------
-	
-
-
-            echo '<script>alert("Debit Card issued successfully.\n\nIt will be delivered to your home address soon.\n\nYour Debit Card No is : '.$debit_card.' and Pin is : '.$debit_card_pin.'\n\n Please change this pin as soon as possible.")</script>';
+                
+            echo '<script>alert("Your Debit Card has been successfully issued and will be delivered to your home address shortly\n\n. Your Debit Card No is '.$debit_card.' and your Pin is '.$debit_card_pin.'.\n\n For security reasons, we recommend changing your Pin as soon as possible.")</script>';
                 
             }
-            //--------------------------------------------------------------------
         }
 
         else{
