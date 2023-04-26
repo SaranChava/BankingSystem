@@ -1,0 +1,2154 @@
+
+/* ================================================ header ==================================================== */
+* {
+    margin: 0px;
+  }
+  
+  body {
+    font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .header_main {
+    width: 100%;
+    background-color: #302e2e;
+  }
+  .navbar ul li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.6s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #5017c3;
+  }
+  
+  .navbar ul {
+    font-family: verdana;
+    margin-right: 20px;
+    text-align: right;
+    padding: 5px;
+    list-style: none;
+  }
+  .navbar li {
+    display: inline;
+    padding: 6px;
+  }
+  
+  .navbar li span {
+    font-family: verdana;
+  }
+  
+  .logo-name {
+    background-color: #5017c3;
+    height: 100px;
+  }
+  .name h5 {
+    color: white;
+    display: inline-block;
+    position: relative;
+    margin-top: 2.3%;
+    left: 2.2%;
+    /* //font-size: 24px; */
+    font-size: 1.5em;
+    font-family: verdana;
+    transition-duration: 0.8s;
+  }
+  .name h6 {
+    color: white;
+    display: inline-block;
+    position: relative;
+    margin-top: -1px;
+    left: 12%;
+    font-size: 0.701em;
+    font-family: verdana;
+    transition-duration: 0.8s;
+  }
+  
+  .logo {
+    border-radius: 20px;
+    float: left;
+    margin-left: 3%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  /* .logo_img {
+    transition-duration: 0.8s;
+    border-radius: 20px;
+    height: 85px;
+    width: 150px;
+  } */
+  
+  .dif_banking {
+    background-color: #5017c3;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 5%;
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: auto;
+  }
+  .dif_banking a {
+    font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-decoration: none;
+    transition-duration: 0.6s;
+    /* // background-color: black; */
+  }
+  .dif_banking a:hover {
+    color: #17c3ba;
+  }
+  .retail_banking {
+    float: left;
+    text-align: center;
+    border-right: 1px solid #5017c3;
+  }
+  .corporate_banking {
+    float: left;
+    text-align: center;
+    border-right: 1px solid #5017c3;
+  }
+  .international_banking {
+    float: left;
+    text-align: center;
+    border-right: 1px solid #5017c3;
+  }
+  .tax {
+    float: left;
+    text-align: center;
+    border-right: 1px solid #5017c3;
+  }
+  .bank_service {
+    float: left;
+    text-align: center;
+  }
+  
+  /* .my_form {
+  } */
+  .srch {
+    margin-left: 65%;
+    display: inline;
+    border: 0px;
+  }
+  
+  .search {
+    border: 1px solid black;
+    border-radius: 2px;
+    color: black;
+    border: 0px;
+    padding: 10px;
+  }
+  .button {
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: #302e2e;
+    padding: 10px;
+    border: 0px;
+  }
+  
+  .icons {
+    font-size: 38px;
+    align-content: center;
+    /* width: 20px; */
+  }
+
+
+/* ================================================ footer ==================================================== */
+  footer .container {
+    width: 90%;
+    margin: 0px auto;
+  }
+  
+  footer {
+    background-color: #302e2e;
+    width: 100%;
+    text-align: left;
+  }
+  /*
+  
+  footer ul{
+      
+      background-color: darkturquoise;
+  }
+  
+  footer ul li{
+      
+      background-color:firebrick;
+  } */
+  
+  footer p {
+    font-size: 14px;
+    font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #f9fbfa;
+    padding: 5px;
+    padding-top: 15px;
+  }
+  
+  footer a {
+    font-size: 14px;
+    font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 20px;
+    color: #c7bedd;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  footer label {
+    font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 45px;
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 500px;
+    font-weight: 600;
+    color: #6556f0;
+  }
+  
+  .follow_us {
+    padding: 10px;
+    margin: 5px;
+    margin-top: 8px;
+    /* //width: 300px; */
+    /* //height: 205px; */
+    float: left;
+    /* //background-color:darkslategrey; */
+  }
+  
+  footer .contact {
+    padding: 10px;
+    margin: 5px;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-top: 8px;
+    /* // width: 295px;
+    //height: 205px; */
+    float: left;
+    /* //background-color:darkslategrey; */
+  }
+  
+  footer .links {
+    padding: 10px;
+    margin: 5px;
+    margin-left: 2%;
+    margin-right: 5%;
+    margin-top: 8px;
+    /* //width: 300px; */
+    height: 205px;
+    float: left;
+    /* //background-color:darkslategrey; */
+  }
+  
+  footer .About_GST {
+    padding: 10px;
+    margin: 5px;
+    margin-top: 8px;
+    /* //width: 300px;
+    //height: 205px; */
+    float: left;
+    /* //background-color:darkslategrey; */
+  }
+  
+  footer ul li {
+    padding: 10px;
+    list-style: none;
+  }
+  
+  footer .notice_copyright {
+    /* border-top: 1px solid #475f81; */
+    font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #cabedd;
+    background-color: #696969;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+
+/* ================================================ index ==================================================== */
+body {
+    font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @keyframes slider {
+    0% {
+      left: 0%;
+    }
+    20% {
+      left: 0%;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
+  
+  .slider {
+    margin: 0px;
+    overflow: hidden;
+  }
+  .slider .slideimg img {
+    width: 20%;
+    height: 75%;
+    float: left;
+  }
+  .slider .slideimg {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 45s slider infinite;
+  }
+  
+  /* .imageSlide{
+    height: 331px;
+  } */
+  
+  .newsroom {
+    box-shadow: 2px 2px 50px black;
+    background-color: #fcf1ca;
+  }
+  
+  .marquee_news {
+    height: 18px;
+    font-weight: 600;
+    margin-right: 2%;
+  }
+  .newsfeed span {
+    margin-right: 20%;
+    color: red;
+    font-size: 12.5px;
+  }
+  
+  .news_events {
+    font-size: 1em;
+    width: 35%;
+    margin: 1%;
+    margin-left: 3.1%;
+    float: left;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 2px solid black;
+  }
+  
+  .news_events p {
+    color: rgb(51, 122, 183);
+    text-align: left;
+  }
+  
+  .news_events h4 {
+    margin-left: 8%;
+  }
+  
+  .contents{
+    margin: 0 auto;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .services {
+    font-size: 1em;
+    margin: 1%;
+    width: 90%;
+    float: left;
+    padding-bottom: 5px;
+    /* background-color: #ffffff; */
+    border-radius: 50px;
+    border: 2px solid black;
+    margin-left: 100px;
+  }
+  
+  .services ul {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+  
+  .services ul li {
+    color: white;
+    padding: 2%;
+    margin: 5px;
+    background-color: #302e2e;
+    display: inline-block;
+    width: 25%;
+    border-radius: 25px;
+    /* border-bottom: 2px solid black; */
+  }
+  
+  .services ul li:hover {
+    background-color: #3b003b;
+  }
+  
+  .services ul a:hover {
+    cursor: pointer;
+  }
+  
+  .services a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .services h4 {
+    margin: 5px;
+    text-align: center;
+  }
+  
+  .accountAction {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .accountAction a {
+    display: block;
+  }
+  
+  .accountAction_options {
+    position: absolute;
+    display: none;
+    background-color: #ffffff;
+    width: 180%;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 40px rgb(45, 71, 112);
+    z-index: 1;
+  }
+  
+  .accountAction_options ul {
+    cursor: auto;
+  }
+  
+  .accountAction_options ul a {
+    cursor: pointer;
+  }
+  .accountAction_options ul li {
+    padding: 7%;
+    width: 72%;
+    color: white;
+    background-color: #350056;
+    display: inline-block;
+    /* //border-top-right-radius: 25px; */
+    border-bottom: 2px solid black;
+  }
+  
+  .accountAction:hover .accountAction_options {
+    display: block;
+  }
+  
+  .about {
+    clear: both;
+    width: 90%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    line-height: 25px;
+    margin: 0px auto;
+    margin-top: 30px;
+    text-align: left;
+    background-color: #f5f5f5;
+    padding: 30px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+    /* //border-radius: 15px; */
+  }
+  .about span {
+    color: #5423a3;
+    /* ./font-size: 22px; */
+    font-weight: 600;
+  }
+  .about p {
+    font-size: 14px;
+    font-size: 0.87em;
+    color: #5d23a3;
+    text-align: justify;
+  }
+  .disclaimer {
+    width: 90%;
+  
+    margin: 0px auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+    /* //  border-radius: 15px; */
+  }
+  
+  .disclaimer span {
+    color: #6523a3;
+    /* //font-size: 18px; */
+    font-weight: 600;
+  }
+  .disclaimer p {
+    font-size: 11px;
+    color: #462cb0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    line-height: 25px;
+    text-align: justify;
+    background-color: #f5f5f5;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+  }
+
+
+
+/* ================================================ UserRegistration ==================================================== */
+  ::-webkit-input-placeholder {
+    font-size: 2.1vh;
+    /* //font-family:verdana; */
+  }
+  
+  .container_regfrm_container_parent h3 {
+    text-align: center;
+    border: 1px solid rgba(59, 44, 134, 0.5);
+    background-color: #ffffff;
+    font-size: 3.5vh;
+    color: rgb(65, 44, 134);
+    font-weight: 500;
+    padding: 15px;
+    width: 30%;
+    margin: 2% auto;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+  }
+  
+  .container_regfrm_container_parent_child {
+    border: 1px solid white;
+    padding: 2%;
+    margin: 5% auto;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(53, 44, 134, 0.5);
+    width: 80%;
+    /* // border-radius: 15px; */
+  }
+  
+  .container_regfrm_container_parent_child input[type="text"],
+  input[type="date"],
+  select {
+    width: 20%;
+    padding: 0.5%;
+    margin: 2%;
+    color: rgb(117, 117, 117);
+    border: 1px solid white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    font-size: 2.1vh;
+  }
+  
+  .container_regfrm_container_parent_child input[name="homeaddrs"] {
+    /* //background-color: black; */
+    width: 94%;
+    display: block;
+    padding: 0.5%;
+    margin: 2%;
+    color: rgb(117, 117, 117);
+    border: 1px solid white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    font-size: 2.1vh;
+  }
+  
+  .container_regfrm_container_parent_child input[name="officeaddrs"] {
+    /* //background-color: black; */
+    width: 94%;
+    display: block;
+    padding: 0.5%;
+    margin: 2%;
+    color: rgb(117, 117, 117);
+    border: 1px solid white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    font-size: 2.1vh;
+  }
+  
+  .container_regfrm_container_parent_child input[type="submit"] {
+    width: 12%;
+    color: white;
+    font-size: 3vh;
+    background-color: rgb(83, 44, 134);
+    border-radius: 3px;
+    box-shadow: 0px 2px black;
+    border: 0px;
+    display: block;
+    margin: 1% auto;
+    padding: 0.5%;
+  }
+  
+  .container_regfrm_container_parent_child input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgba(34, 11, 89, 0.7);
+  }
+::-webkit-input-placeholder {
+  font-size: 2.1vh;
+  /* //font-family:verdana; */
+}
+
+.container_regfrm_container_parent h3 {
+  text-align: center;
+  border: 1px solid rgba(80, 44, 134, 0.5);
+  background-color: #ffffff;
+  font-size: 3.5vh;
+  color: rgb(72, 44, 134);
+  font-weight: 500;
+  padding: 15px;
+  width: 30%;
+  margin: 2% auto;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+}
+
+.container_regfrm_container_parent_child {
+  border: 1px solid white;
+  padding: 2%;
+  margin: 5% auto;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(51, 44, 134, 0.5);
+  width: 80%;
+  /* // border-radius: 15px; */
+}
+
+.container_regfrm_container_parent_child input[type="text"],
+input[type="date"],
+select {
+  width: 20%;
+  padding: 0.5%;
+  margin: 2%;
+  color: rgb(117, 117, 117);
+  border: 1px solid white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 2.1vh;
+}
+
+.container_regfrm_container_parent_child input[name="homeaddrs"] {
+  /* //background-color: black; */
+  width: 94%;
+  display: block;
+  padding: 0.5%;
+  margin: 2%;
+  color: rgb(117, 117, 117);
+  border: 1px solid white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 2.1vh;
+}
+
+.container_regfrm_container_parent_child input[name="officeaddrs"] {
+  /* //background-color: black; */
+  width: 94%;
+  display: block;
+  padding: 0.5%;
+  margin: 2%;
+  color: rgb(117, 117, 117);
+  border: 1px solid white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 2.1vh;
+}
+
+.container_regfrm_container_parent_child input[type="submit"] {
+  width: 12%;
+  color: white;
+  font-size: 3vh;
+  background-color: rgb(77, 44, 134);
+  border-radius: 3px;
+  box-shadow: 0px 2px black;
+  border: 0px;
+  display: block;
+  margin: 1% auto;
+  padding: 0.5%;
+}
+
+.container_regfrm_container_parent_child input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgba(44, 11, 89, 0.7);
+}
+  
+
+
+
+/* ================================================ cust_regfrm_confirm ==================================================== */
+.cust_regfrm_cnfrm_container {
+    line-height: 30px;
+    color: #333;
+    width: 70%;
+    margin: 0px auto;
+    font-size: 14px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    background-color: #817e7e;
+    text-align: justify;
+    padding: 50px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+  }
+  
+  .cnfrm_info {
+    width: 70%;
+    margin: 0px auto;
+    /* //background-color:brown; */
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .cnfrm_info span {
+    display: block;
+    /* //background-color:pink; */
+    padding: 15px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: verdana;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cnfrm-btn {
+    width: 100%;
+    /* //background-color:pink; */
+  }
+  
+  .cnfrm-btn .cnfrm-submit-btn {
+    color: white;
+    font-size: 16px;
+    background-color: #190166;
+    border-radius: 3px;
+    box-shadow: 0px 2px black;
+    border: 0px;
+    margin: 0px auto;
+    padding: 10px;
+    width: 80px;
+    margin-left: 20px;
+  }
+  
+
+
+
+/* ================================================ staff_profile_header ==================================================== */
+* {
+    font-family: verdana;
+  }
+  .head_header{
+    margin-left:20%;
+  }
+  .cust_profile_container {
+    height: 100%;
+  }
+  
+  .customer_details {
+    margin: 20px 20px;
+    float: right;
+  }
+  
+  .customer_details img {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-left: 10%;
+  }
+  
+  .welcome {
+    background-color: #ffffff;
+    padding: 33px;
+    box-shadow: 0px 1px 3px black;
+    color: black;
+  }
+  
+  .welcome label {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+  }
+  
+  .cust_nav_btn {
+    /* //float: right; */
+    margin-left: -50px;
+  }
+  .cust_nav_btn input {
+    float: right;
+    background-color: firebrick;
+    border: 0px;
+    padding: 8px;
+    margin: 5px;
+    color: white;
+  }
+  
+  .cust_nav_btn input:hover {
+    cursor: pointer;
+  }
+  
+  .warning {
+    background-color: firebrick;
+    color: wheat;
+  }
+  
+  .customer_details label {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgb(0, 21, 255);
+    padding: 10px;
+  }
+  .profile_nav {
+    background-color: #3c2c86;
+    height: 50px;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+  .profile_nav ul li {
+    float: left;
+    padding: 10px;
+    /* padding-left: 70px;
+      padding-right: 70px;*/
+    list-style: none;
+    margin-top: 5px;
+    margin-left: 8%;
+    /* // border:1px solid white; */
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .profile_nav ul li:hover {
+    color: #341ec3;
+  }
+  .profile_nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .balance_tab {
+    width: 30%;
+    background-color: #f0f8ff;
+    float: left;
+    margin: 3px;
+    margin-left: 40px;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  
+
+
+/* ================================================ customer_profile ==================================================== */
+/* .cust_profile_container { */
+    /* //background-color: wheat; */
+  /* } */
+  
+  .acc_details {
+    width: 25%;
+    height: 45%;
+    background-color: rgb(242, 242, 242);
+    float: right;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+    border: 1px solid rgba(59, 44, 134, 0.3);
+    font-size: 2.3vh;
+  }
+  
+  .acc_details label {
+    width: 100%;
+    background-color: white;
+    float: left;
+    padding: 2%;
+    margin: 2%;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .statement {
+    height: 45%;
+    width: 58%;
+    margin: 2px;
+    background-color: rgb(242, 242, 242);
+    float: right;
+    overflow: auto;
+    text-align: center;
+    border: 1px solid rgba(66, 44, 134, 0.3);
+  }
+  
+  .statement table {
+    width: 100%;
+    margin: 1% auto;
+    /* //height: 2%; */
+    font-size: 2vh;
+    border-collapse: collapse;
+    border: 1px rgb(221, 221, 221);
+    /* //padding: 20px; */
+    text-align: center;
+  }
+  .statement table th {
+    color: white;
+    background-color: #28007d;
+    border: 1px solid rgb(219, 219, 219);
+  }
+  
+  .statement table tr:nth-child(even) {
+    background-color: rgb(242, 242, 242);
+  }
+  
+  .statement table tr:nth-child(odd) {
+    background-color: white;
+  }
+  
+  .statement table tr td {
+    border: 1px solid rgb(219, 219, 219);
+  
+    padding: 1%;
+    height: 50px;
+  }
+  
+
+
+/* ================================================ fund_transfer ==================================================== */
+.fundtransfer_conainer {
+    background-color: #ffffff;
+    width: 35%;
+    margin: 5% auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .fundtransfer_conainer span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .fundtransfer_conainer input[type="text"],
+  select {
+    /* //background-color: cadetblue; */
+    padding: 2%;
+    width: 60%;
+    margin: 1% auto;
+    display: block;
+  }
+  .beneficiary_btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .beneficiary_btn input[class="beneficiary"] {
+    /* //font-size: 2.2vh; */
+    color: white;
+    padding: 1.5%;
+    margin: 1% auto;
+    background-color: #1b007d;
+    border: 0px;
+    border-radius: 10px;
+  }
+  
+  input[name="fnd_trns_btn"] {
+    color: white;
+    font-size: 15px;
+    background-color: #19007d;
+    border-radius: 3px;
+    box-shadow: 0px 3px black;
+    border: 0px;
+    display: block;
+    margin: 0px auto;
+    width: 60%;
+    padding: 2%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  input[name="fnd_trns_btn"]:hover {
+    cursor: pointer;
+    background-color: rgba(66, 44, 134, 0.8);
+  }
+
+  
+
+
+/* ================================================ fund_transfer_otp ==================================================== */
+::-webkit-input-placeholder {
+    font-size: 2.2vh;
+    /* //font-family:verdana; */
+  }
+  .OTP_msg {
+    margin: 2% auto;
+    text-align: center;
+    font-style: oblique;
+    font-size: 13px;
+    background-color: rgb(218, 218, 218);
+    width: 40%;
+    display: block;
+    padding: 0.5%;
+    box-shadow: 1px 1px 2px black;
+  }
+  
+  .fund_transfer_otp_container {
+    background-color: #7b789c;
+    width: 30%;
+    margin: 4% auto;
+    padding: 5%;
+    border: 1px solid rgba(11, 30, 89, 0.3);
+    box-shadow: 2px 2px 10px rgba(11, 30, 89, 0.3);
+    transition: 0.5s;
+  }
+  
+  .fund_transfer_otp_container:hover {
+    box-shadow: 4px 4px 20px rgba(11, 30, 89, 0.5);
+  }
+  
+  .fund_transfer_otp_container input[type="text"] {
+    width: 70%;
+    padding: 2%;
+    float: left;
+    font-size: 2.5vh;
+    border: 1px solid rgb(11, 30, 89);
+  }
+  
+  .fund_transfer_otp_container input[type="submit"] {
+    padding: 2%;
+    width: 20%;
+    font-size: 2.5vh;
+    /* //font-weight: 600; */
+    background-color: rgb(32, 11, 89);
+    color: white;
+    border: 1px solid rgb(25, 11, 89);
+  }
+  
+  .fund_transfer_otp_container input[type="submit"]:hover {
+    cursor: pointer;
+  }
+  .fund_transfer_otp_container form {
+    margin-left: 10%;
+  }
+  
+
+
+/* ================================================ customer_profile_myacc ==================================================== */
+.cust_myacc_container {
+    width: 80%;
+    margin: auto;
+  }
+  .cust_myacc_container .accdet {
+    background-color: #f1f0ff;
+    margin: 3px;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+  
+  .cust_myacc_container .accdet label {
+    border: 1px solid rgba(71, 44, 134, 0.2);
+    /* //display: inline-block; */
+    padding: 8px;
+    float: left;
+    text-align: left;
+    margin: 5px;
+    width: 97%;
+  
+    font-size: 15px;
+  }
+  
+  .accdet input {
+    background-color: #00027d;
+    padding: 1%;
+    border: 0px;
+    color: white;
+    font-size: 2.5vh;
+  }
+  
+
+
+
+
+/* ================================================ customer_profile_myprofile ==================================================== */
+.myprofile_container {
+    margin: 2.7% auto;
+    width: 80%;
+    background-color: rgb(244, 240, 255);
+    border: 1px solid black;
+  }
+  
+  .customer_profile_photo img {
+    border: 1px solid black;
+  }
+  
+  .customer_profile_details {
+    width: 80%;
+    margin: 0px auto;
+    padding: 5%;
+  }
+  
+  .myprofile_container label {
+    /* //text-align: center; */
+    display: block;
+    padding: 1%;
+    border: 1px solid rgb(205, 201, 231);
+  }
+  
+
+
+
+/* ================================================ debit_card_form ==================================================== */
+.debit_card_form_container {
+    background-color: #ffffff;
+    width: 35%;
+    margin: 5% auto;
+    /* // border-radius: 5px; */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .debit_card_form_container h3 {
+    text-align: center;
+    border: 1px solid rgba(59, 44, 134, 0.5);
+    background-color: #ffffff;
+    font-size: 3.5vh;
+    color: rgb(51, 44, 134);
+    font-weight: 500;
+    padding: 15px;
+    margin: 2% auto;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+  }
+  
+  .debit_card_form_container input[type="text"],
+  input[type="date"] {
+    padding: 2%;
+    width: 60%;
+    margin: 1% auto;
+    display: block;
+  }
+  
+  .debit_card_form_container input[type="submit"] {
+    color: white;
+    font-size: 15px;
+    background-color: rgb(65, 44, 134);
+    border-radius: 3px;
+    box-shadow: 0px 3px black;
+    border: 0px;
+    display: block;
+    margin: 0px auto;
+    width: 60%;
+    padding: 2%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .debit_card_form_container input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgba(77, 44, 134, 0.8);
+  }
+  
+  
+
+
+/* ================================================ customer_login ==================================================== */
+body {
+    margin: 0px;
+  }
+  
+  .login_container h2 {
+    text-align: center;
+    color: black;
+    opacity: 0.5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+  
+  .formspace {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 400px;
+    margin: 0px auto;
+    box-shadow: 2px 2px 5px black;
+  }
+  .formspace2 {
+    border-top-right-radius: 20px;
+    width: 350x;
+    background-color: #3b3b3e;
+    height: 100px;
+  }
+  
+  .form {
+    border-radius: 8px;
+    position: relative;
+    top: -50px;
+    background-color: white;
+    width: 300px;
+    height: 125px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    margin-left: 7%;
+    box-shadow: 2px 2px 2px rgba(126, 126, 126, 0.5);
+  }
+  
+  .form .login {
+    color: #626168;
+    position: relative;
+    top: -40px;
+    margin-left: 35%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .userdetail {
+    font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #ccc6ee;
+  }
+  
+  input {
+    color: rgba(44, 44, 44, 0.9);
+    background-color: white;
+    border: 1px solid white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(68, 68, 68, 0.3);
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+  .customer_id input {
+    width: 250px;
+    margin-top: 5px;
+  }
+  
+  .userpassword input {
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .login-btn {
+    cursor: pointer;
+    position: relative;
+    top: -6px;
+    padding: 18px;
+    margin-left: 43px;
+    font-size: 13px;
+    width: 220px;
+    border: 1px solid #4249d7;
+    background-color: #5642d7;
+    border-radius: 30px;
+    color: white;
+  }
+  
+  .label_help {
+    text-decoration: none;
+    cursor: pointer;
+    color: #b38c44;
+    margin-left: 90px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: 0.8s;
+  }
+  
+  .help {
+    text-decoration: none;
+  }
+  
+  .label_help:hover {
+    color: black;
+  }
+  
+  .userloginimg {
+    position: relative;
+    margin-top: -150%;
+    margin: -150% 34%;
+  }
+  
+
+
+/* ================================================ customer_pass_change ==================================================== */
+::-webkit-input-placeholder {
+    font-size: 2.5vh;
+    /* //font-family:verdana; */
+  }
+  
+  .cust_passchng_container {
+    background-color: #ffffff;
+    width: 30%;
+    margin: 5% auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .cust_passchng_container input[type="password"] {
+    padding: 2%;
+    width: 60%;
+    margin: 1% auto;
+    display: block;
+  }
+  
+  .cust_passchng_container input[type="submit"] {
+    color: white;
+    font-size: 15px;
+    background-color: #0f007d;
+    border-radius: 3px;
+    box-shadow: 0px 3px black;
+    border: 0px;
+    display: block;
+    margin: 0px auto;
+    width: 60%;
+    padding: 2%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .cust_passchng_container input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgba(11, 30, 89, 0.8);
+  }
+  
+  
+
+
+/* ================================================ cust_statement ==================================================== */
+.cust_statement_container_head label {
+    /* //   background-color: blueviolet; */
+    display: block;
+    text-align: center;
+    margin-top: 1%;
+    /* //background-color: gray; */
+    font-size: 3vh;
+  }
+  
+  .cust_statement_container {
+    /* //background-color: burlywood; */
+    width: 80%;
+    margin: 2% auto;
+    height: 70%;
+    /* //overflow-y:auto; */
+    overflow-x: hidden;
+    border: 1px ligh black;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cust_statement {
+    font-size: 3vh;
+    width: 100%;
+    /* //background-color: cadetblue; */
+    text-align: center;
+  }
+  .cust_statement table {
+    border-collapse: collapse;
+    margin: 1% auto;
+    /* // height: 2%; */
+    font-size: 2vh;
+    border-collapse: collapse;
+    border: 1px rgb(221, 221, 221);
+    /* //padding: 20px; */
+    text-align: center;
+  }
+  .cust_statement table th {
+    color: white;
+    height: 50px;
+    widows: 50px;
+    background-color: #06007d;
+    border: 1px solid rgb(245, 245, 245);
+  }
+  
+  .cust_statement table tr:nth-child(even) {
+    background-color: rgb(242, 242, 242);
+  }
+  
+  .cust_statement table tr:nth-child(odd) {
+    background-color: white;
+  }
+  
+  .cust_statement table tr td {
+    border: 1px solid rgb(255, 255, 255);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .cust_statement table tr {
+    background-color: blue;
+  }
+
+  
+
+
+
+/* ================================================ add_beneficiary ==================================================== */
+.add_beneficiary_container {
+    background-color: #c5d9e2;
+    width: 30%;
+    margin: 5% auto;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .add_beneficiary_container input,
+  select {
+    width: 75%;
+    height: 7.9%;
+    padding: 10px;
+    margin: 1.5%;
+    margin-left: 12%;
+    border: 0px;
+    border-radius: 3px;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    color: rgb(117, 117, 117);
+  }
+  
+  .add_beneficiary_container input[type="submit"] {
+    color: white;
+    font-size: 24px;
+    background-color: #17007d;
+    border-radius: 3px;
+    box-shadow: 0px 2px black;
+    border: 0px;
+  }
+  
+  
+  
+
+
+/* ================================================ delete_beneficiary ==================================================== */
+.delete_beneficiary_container {
+    text-align: center;
+  }
+  
+  .delete_beneficiary_table_container {
+    width: 80%;
+    margin: 0px auto;
+    overflow-x: auto;
+  }
+  
+  table {
+    margin: 10% auto;
+    margin-bottom: 5%;
+    width: 100%;
+    font-size: 15px;
+    border-collapse: collapse;
+    border: 1px rgb(221, 221, 221);
+    /* //padding: 20px; */
+    text-align: center;
+  }
+  table th {
+    color: white;
+    height: 50px;
+    background-color: #0f007d;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(242, 242, 242);
+  }
+  
+  tr:nth-child(odd) {
+    background-color: white;
+  }
+  
+  td {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  input[name="delete_beneficiary"] {
+    color: white;
+    font-size: 2.4vh;
+    background-color: #000a7d;
+    border-radius: 3px;
+    box-shadow: 0px 2px black;
+    border: 0px;
+    display: -inline-block;
+    margin: 0px auto;
+    margin-top: -5%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    padding: 1%;
+    cursor: pointer;
+    width: 12%;
+  }
+  
+  input[name="go_back"] {
+    color: white;
+    font-size: 2.4vh;
+    background-color: #000a7d;
+    border-radius: 3px;
+    box-shadow: 0px 2px black;
+    border: 0px;
+    display: inline-block;
+    margin: 0px auto;
+    margin-bottom: 5%;
+    padding: 1%;
+    cursor: pointer;
+    width: 12%;
+  }
+  
+  
+  
+
+
+/* ================================================ view_beneficiary ==================================================== */
+table {
+    margin: 10% auto;
+    width: 80%;
+    font-size: 15px;
+    border-collapse: collapse;
+    border: 1px rgb(221, 221, 221);
+    /* //padding: 20px; */
+    text-align: center;
+  }
+  table th {
+    color: white;
+    height: 50px;
+    background-color: #13007d;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(242, 242, 242);
+  }
+  
+  tr:nth-child(odd) {
+    background-color: white;
+  }
+  
+  td {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  input[name="delete_beneficiary"] {
+    color: white;
+    font-size: 15px;
+    background-color: #00027d;
+    border-radius: 3px;
+    box-shadow: 0px 2px black;
+    border: 0px;
+    display: block;
+    margin: 0px auto;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    padding: 1%;
+    cursor: pointer;
+  }
+  
+  input[name="go_back"] {
+    color: white;
+    font-size: 15px;
+    background-color: #c5d9e2;
+    border-radius: 3px;
+    box-shadow: 0px 2px black;
+    border: 0px;
+    display: block;
+    margin: 0px auto;
+    margin-top: -5%;
+    margin-bottom: 5%;
+    padding: 1%;
+    cursor: pointer;
+  }
+  
+  
+  
+
+
+/* ================================================ cust_forgetpass ==================================================== */
+* {
+    /* // font-family: verdana; */
+  }
+  
+  ::-webkit-input-placeholder {
+    font-size: 15px;
+    /* //font-family:verdana; */
+  }
+  
+  .forgetpass_cotainer p {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+  }
+  .forgetpass_cotainer {
+    background-color: rgb(185, 190, 237);
+    width: 400px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .forgetpass_cotainer input {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 12%;
+    border: 0px;
+    border-radius: 3px;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+  }
+  
+  .forgetpass_cotainer input[type="submit"] {
+    color: white;
+    font-size: 24px;
+  
+    background-color: rgb(60, 44, 134);
+    border-radius: 3px;
+    box-shadow: 0px 2px black;
+    border: 0px;
+  }
+  
+  .forgetpass_cotainer input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgba(11, 30, 89, 0.8);
+  }
+  
+  
+  
+
+
+/* ================================================ delete_customer ==================================================== */
+.delete_customer_container_heading {
+    width: 40%;
+    width: 100%;
+    text-align: center;
+    margin: 1.5%;
+    font-size: 3vh;
+  }
+  .delete_customer_container {
+    padding: 2%;
+    background-color: #c5c7e2;
+    width: 30%;
+    margin: 2% auto;
+    text-align: center;
+    color: rgb(5, 21, 71);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .delete_customer_container input {
+    font-size: 2vh;
+    width: 60%;
+    padding: 2%;
+    margin: 2%;
+  }
+  
+  .delete_customer_container input[type="submit"] {
+    background-color: #0d0056;
+    border: 0px;
+    color: white;
+    font-size: 2.5vh;
+    transition: 0.5s;
+    border-bottom: 3px solid black;
+  }
+  
+  .delete_customer_container input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #0b013f;
+  }
+  
+  
+  
+
+
+/* ================================================ view_customer_by_acc_no ==================================================== */
+.view_cust_byac_container_inner {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    margin: 5% auto;
+  }
+  
+  .view_cust_byac_container_inner .cust_details {
+    background-color: #f0f8ff;
+    margin: 3px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    height: 100%;
+  }
+  
+  .view_cust_byac_container_inner .cust_details label {
+    border: 1px solid rgba(44, 78, 134, 0.2);
+    padding: 8px;
+    float: left;
+    text-align: left;
+    margin: 5px;
+    width: 97%;
+    font-size: 15px;
+  }
+  
+  .view_cust_byac_container_outer {
+    margin: 5% auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 30%;
+    background-color: #c5d9e2;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+  .view_cust_byac_container_outer input {
+    padding: 4%;
+    margin: 2.5%;
+    width: 60%;
+  }
+  .view_cust_byac_container_outer input[type="submit"] {
+    background-color: #060056;
+    font-size: 16;
+    color: white;
+    border: 0px;
+  }
+  
+  
+  
+
+
+/* ================================================ customer_profile_header ==================================================== */
+.customer_details {
+    margin: 20px 20px;
+    float: left;
+  }
+  
+  .customer_details img {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-left: 10%;
+  }
+  
+  .welcome {
+    background-color: #c9c5e2;
+    padding: 33px;
+    box-shadow: 0px 1px 3px black;
+    color: black;
+  }
+  
+  .welcome label {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+  }
+  
+  .welcome .lstlogin {
+    margin-left: 138px;
+  }
+  
+  .warning {
+    background-color: firebrick;
+    color: wheat;
+  }
+  
+  .customer_details label {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: cyan;
+    padding: 10px;
+  }
+  .profile_nav {
+    float : right;
+    background-color: #3a393b;
+    height: 50px;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+
+  .profile_nav ul li {
+    float: left;
+    padding: 1%;
+    width: 150px;
+    list-style: none;
+    margin-left: 5.5%;
+    color: white;
+    /* //background-color:green; */
+    text-align: center;
+  }
+  
+  .profile_nav ul li:hover {
+    background-color: rgba(5, 21, 71, 0.4);
+  }
+
+  .profile_nav .sidebar {
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+  }
+  
+  .profile_nav .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+  }
+
+  .profile_nav .sidebar ul li a:hover,
+  .profile_nav .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+  }
+
+  .profile_nav .sidebar ul li a:hover:before,
+  .profile_nav .sidebar ul li a.active:before{
+      display: block;
+  }
+
+  .wrapper {
+    background-color: #aca8b1;
+    height: 100%;
+    display: inline-block;
+    width:20%;
+    margin-top: 2px;
+    margin-left: 1%;
+  }
+
+  .wrapper .sidebar{
+    background: rgb(135, 137, 139);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+  }
+  .wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .wrapper .sidebar .profile img{
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto;
+  }
+
+  .wrapper .sidebar .profile h3{
+      color: #ffffff;
+      margin: 10px 0 5px;
+  }
+
+  .wrapper .sidebar .profile p{
+      color: rgb(206, 240, 253);
+      font-size: 14px;
+  }
+  .wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #8f8d9a;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+  }
+  .wrapper .sidebar ul li a:hover,
+  .wrapper .sidebar ul li a.active{
+      color: #7e8486;
+
+      background:white;
+      border-right: 2px solid rgb(30, 5, 104);
+  }
+
+  .wrapper .sidebar ul li a:hover:before,
+  .wrapper .sidebar ul li a.active:before{
+      display: block;
+  }
+
+/* ================================================ staff_profile ==================================================== */
+.staff_options {
+    width: 50%;
+    background-color: #c5c5e2;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 5%;
+    /* //border-radius: 20px; */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .staff_options input {
+    font-size: 16px;
+    width: 40%;
+    height: 12%;
+    padding: 3%;
+    margin: 3%;
+    transition-duration: 0.5s;
+    background-color: #010056;
+    color: white;
+  }
+  
+  .staff_options input:hover {
+    cursor: pointer;
+    background-color: #000d3f;
+  }
+  
+  #homeBtn, #logoutBtn{
+
+      background-color:rgba(5, 21, 71,0.9);
+      border:none;
+      padding:5px;
+      width:70px;
+      color:white;
+      cursor:pointer;
+      box-shadow:2px 2px 6px rgba(5, 21, 71,0.9);
+      transition-duration: 0.6s;
+  }
+
+#homeBtn:hover, #logoutBtn:hover{
+    padding:10px;
+}
+
+
+/* ================================================ active_customers ==================================================== */
+.active_customers_container {
+  margin: 5% auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 80%;
+  background-color: antiquewhite;
+  height: 80%;
+}
+
+table {
+  width: 200%;
+  font-size: 15px;
+  border-collapse: collapse;
+  border: 1px rgb(221, 221, 221);
+  /* //padding: 20px; */
+  text-align: center;
+}
+table th {
+  color: white;
+  height: 50px;
+  background-color: #000c7d;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(242, 242, 242);
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+td {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+  
+  
+
+
+/* ================================================ credit_customer_ac ==================================================== */
+.cust_credit_container {
+  padding: 2%;
+  background-color: #ccc5e2;
+  width: 28%;
+  margin: 3% auto;
+  text-align: center;
+  color: rgb(5, 21, 71);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cust_credit_container input {
+  padding: 3%;
+  margin: 2%;
+  width: 60%;
+}
+
+.cust_credit_container input[type="submit"] {
+  background-color: #030056;
+  border: 0px;
+  color: white;
+  font-size: 2.5vh;
+  transition: 0.5s;
+  border-bottom: 3px solid black;
+}
+
+.cust_credit_container input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #0a003f;
+}
+
+  
+  
+
+
+/* ================================================ cust_forgetpassotpverify ==================================================== */
+::-webkit-input-placeholder {
+  font-size: 2.2vh;
+  /* //font-family:verdana; */
+}
+
+.cust_forgetpassotpverify {
+  background-color: aqua;
+  width: 30%;
+  margin: 10% auto;
+  padding: 5%;
+  border: 1px solid rgba(11, 30, 89, 0.3);
+  box-shadow: 2px 2px 10px rgba(11, 30, 89, 0.3);
+  transition: 0.5s;
+}
+
+.cust_forgetpassotpverify:hover {
+  box-shadow: 4px 4px 20px rgba(11, 30, 89, 0.5);
+}
+
+.cust_forgetpassotpverify input[type="text"] {
+  width: 70%;
+  padding: 2%;
+  float: left;
+  font-size: 2.5vh;
+  border: 1px solid rgb(11, 30, 89);
+}
+
+.cust_forgetpassotpverify input[type="submit"] {
+  padding: 2%;
+  width: 20%;
+  font-size: 2.5vh;
+  /* //font-weight: 600; */
+  background-color: rgb(11, 30, 89);
+  color: white;
+  border: 1px solid rgb(11, 30, 89);
+}
+
+.cust_forgetpassotpverify input[type="submit"]:hover {
+  cursor: pointer;
+}
+.cust_forgetpassotpverify form {
+  margin-left: 10%;
+}
+
+
+  
+  
+
+
+/* ================================================ view_customer_by_acc_no ==================================================== */
+.view_cust_byac_container_inner {
+  width: 80%;
+  margin: auto;
+  border: 1px solid black;
+  margin: 5% auto;
+}
+
+.view_cust_byac_container_inner .cust_details {
+  background-color: #f0f8ff;
+  margin: 3px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  height: 100%;
+}
+
+.view_cust_byac_container_inner .cust_details label {
+  border: 1px solid rgba(44, 78, 134, 0.2);
+  padding: 8px;
+  float: left;
+  text-align: left;
+  margin: 5px;
+  width: 97%;
+  font-size: 15px;
+}
+
+.view_cust_byac_container_outer {
+  margin: 5% auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  width: 30%;
+  background-color: #c5d9e2;
+  text-align: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.view_cust_byac_container_outer input {
+  padding: 4%;
+  margin: 2.5%;
+  width: 60%;
+}
+.view_cust_byac_container_outer input[type="submit"] {
+  background-color: #040056;
+  font-size: 16;
+  color: white;
+  border: 0px;
+}
+
+
+
+  
+  
+
+
+/* ================================================ cust_regfrm_confirm ==================================================== */
+
+  
+  
+
+
+/* ================================================ cust_regfrm_confirm ==================================================== */
+
+
+  
+  
+
+
+/* ================================================ cust_regfrm_confirm ==================================================== */
+
+  
+  
+
+
+/* ================================================ cust_regfrm_confirm ==================================================== */
