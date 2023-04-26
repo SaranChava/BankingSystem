@@ -23,8 +23,6 @@
 			$_SESSION['cust_id'] = $row['Customer_ID'];
 			$_SESSION['forgetpass_otp'] = $otp;
 			$hidden_mob_no = substr($mob_no, 0, 3)."XXXX".substr($mob_no, 7, 10);
-		//-------------------------------------------------------------------------------	
-		//SMS Integration for OTP  -----------------------------------------------------
 						
 					require('textlocal.class.php');
 					$apikey = 'Mzie479SxfY-Z7slYf9AI3zVXCAu0G5skUBQVYOfRU';

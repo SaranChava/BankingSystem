@@ -9,6 +9,14 @@
     </head>
 	
     <body>
+	<style>
+			
+			body {
+				
+				background-color: 000000
+			}
+
+		</style>
 		<div class="container_regfrm_container_parent">
 			<h3>New Account Opening Form</h3>
 		
