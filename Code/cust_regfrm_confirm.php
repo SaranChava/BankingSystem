@@ -79,49 +79,6 @@ if(isset($_POST['cnfrm-submit'])){
 	
 	date_default_timezone_set('Asia/Kolkata'); 
 	$application_dt = date("d/m/y h:i:s A");
-	
-	// $sql="INSERT into pending_accounts (Application_no, 
-	// Name,
-	// Gender,
-	// Mobile_no,
-	// Email_id,
-	// Landline_no,
-	// DOB,
-	// SSN,
-	// CITIZENSHIP,
-	// Home_Addr,
-	// Office_Addr,
-	// Country,
-	// State,
-	// City,
-	// Pin,
-	// Area_Loc,
-	// Nominee_name,
-	// Nominee_ac_no,
-	// Account_type,
-	// Application_Date)
-
-	// VALUES
-	// ('$application_no',
-	// '$name',
-	// '$gender',
-	// '$mobile',
-	// '$email',
-	// '$landline',
-	// '$dob',
-	// '$SSN',
-	// '$citizenship',
-	// '$homeaddrs',
-	// '$officeaddr',
-	// '$country',
-	// '$state',
-	// '$city',
-	// '$pin',
-	// '$arealoc',
-	// '$nominee_name',
-	// '$nominee_ac_no',
-	// '$acctype',
-	// '$application_dt')" ;
 
 $sql = "SELECT MAX(Customer_ID) AS Last_Customer FROM bank_customers";
 $result = $conn->query($sql);

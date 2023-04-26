@@ -54,7 +54,7 @@ CREATE TABLE `bank_customers` (
   `Ac_Opening_Date` varchar(255) DEFAULT NULL,
   `Account_Status` varchar(10) NOT NULL,
   `Account_type` varchar(20) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+);
 
 
 INSERT INTO `bank_customers` (`Id`, `Username`, `Password`, `Customer_Photo`, `Photo_name`, `Customer_ID`, `Gender`, `Landline_no`, `Home_Addr`, `Office_Addr`, `Country`, `State`, `City`, `Pin_code`, `Account_no`, `Branch`, `IFSC_Code`, `SSN`, `CITIZENSHIP`, `Current_Balance`, `LastTransaction`, `Mobile_no`, `Email_ID`, `Debit_Card_No`, `Debit_Card_Pin`, `CVV`, `DOB`, `Area_Loc`, `Nominee_name`, `Nominee_ac_no`, `Last_Login`, `Ac_Opening_Date`, `Account_Status`, `Account_type`) VALUES
@@ -618,4 +618,15 @@ ALTER TABLE `passbook_1011950`
 ALTER TABLE `staff`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
+drop table loan_requests;
+CREATE TABLE loan_requests (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `type_of_loan` ENUM('educational', 'home', 'vehicle', 'business', 'personal') NOT NULL,
+  `loan_amount` DECIMAL(10, 2) NOT NULL,
+  `annual_income` DECIMAL(10, 2) NOT NULL,
+  `Customer_id` int(100) NOT NULL,
+  `status` ENUM('approved','pending','declined') default 'pending',
+  PRIMARY KEY (`id`)
+);
 
+INSERT INTO loan_requests (type_of_loan, loan_amount, annual_income, Customer_id) VALUES ("educational",1000,500,1);
