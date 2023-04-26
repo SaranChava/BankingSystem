@@ -1058,11 +1058,10 @@ select {
 /* ================================================ customer_profile_myacc ==================================================== */
 .cust_myacc_container {
     width: 80%;
-    margin: auto;
+    margin-left:20%;
   }
   .cust_myacc_container .accdet {
     background-color: #f1f0ff;
-    margin: 3px;
     border: 1px solid black;
     color: black;
     text-align: center;
@@ -1108,7 +1107,7 @@ select {
   
   .customer_profile_details {
     width: 80%;
-    margin: 0px auto;
+    margin-left: 20%;
     padding: 5%;
   }
   
@@ -1350,6 +1349,7 @@ body {
     display: block;
     text-align: center;
     margin-top: 1%;
+    margin-left: 20%;
     /* //background-color: gray; */
     font-size: 3vh;
   }
@@ -1357,10 +1357,10 @@ body {
   .cust_statement_container {
     /* //background-color: burlywood; */
     width: 80%;
-    margin: 2% auto;
+    margin-left: 20%;
+    margin-right: 2%;
     height: 70%;
-    /* //overflow-y:auto; */
-    overflow-x: hidden;
+    overflow-x:auto;
     border: 1px ligh black;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
@@ -1842,7 +1842,6 @@ table {
 
   .wrapper {
     background-color: #aca8b1;
-    height: 100%;
     display: inline-block;
     width:20%;
     margin-top: 2px;
