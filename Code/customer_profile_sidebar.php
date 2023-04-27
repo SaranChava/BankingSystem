@@ -21,7 +21,7 @@
             </div>
                     <ul>
                         <li>
-                            <a href="modify_acc_details.php" class="active">
+                            <a href="modify_acc_details.php">
                                 <span class="item">Modify Account Details</span>
                             </a>
                         </li>

@@ -11,26 +11,21 @@
 <div class="new_offers_container">
 
 <table border="1px" cellpadding="5">
-			   <th>Offer</th>
-			   <th>Validity</th>
+				<th>Validity</th>
+			   <th><a>Offer</a></th>
 			   
-<?php
-
-			
-		echo '
 			<tr>
-			<td> "ABC Bank offers a high-yield online savings account with a 0.50% APY." </td>
-			<td>"05-May-2023"</td></tr>
+			<td>"05-May-2023"</td>
+			<td> <marquee>"ABC Bank offers a high-yield online savings account with a 0.50% APY."</marquee> </td>
+			</tr>
             <tr>
-			<td> "Get lowest interest rate on direct loan application from bank" </td>
-			<td>"10-May-2023"</td></tr>
+			<td>"10-May-2023"</td>
+			<td> <marquee>"Get lowest interest rate on direct loan application from bank"</marquee> </td>
+			</tr>
             <tr>
-            <td> "ABC offers the Cred® Cash Rewards credit card, which gives you 4% cash back on a category of your choice, 3% cash back at grocery stores and wholesale clubs, and 2% cash back on all other purchases." </td>
 			<td>"06-May-2023"</td>
-			</tr>';
-
-?>
-
+            <td> <marquee>"ABC offers the Cred® Cash Rewards credit card, which gives you 4% cash back on a category of your choice, 3% cash back at grocery stores and wholesale clubs, and 2% cash back on all other purchases."</marquee> </td>
+			</tr>
 </table>
 </div>
 </body>

@@ -6,7 +6,7 @@
 ?>
 <html>
     <head>
-        <title>Admin Login</title>
+        <title>Employee Login</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 
         <style>
@@ -35,14 +35,14 @@
                     <p class="">
 
                     <div class="form">
-                        <label class="login">Admin Login</label>
+                        <label class="login">Employee Login</label>
                         <div class="input_field">  
-                            <label class="userdetail">Admin ID</label><br>
+                            <label class="userdetail">Employee ID</label><br>
                             <input class="customer_id" type="text" name="staff_id" id="staff_id"/><br>
                             <label class="userdetail">Password</label><br>
                             <input class="password" type="password" name="password" id="password"/><br>
                             <input class="login-btn" type="submit" name="staff_login-btn" value="LOGIN"/><br>
-                            <a class="help"><label class="label_help" >FORGET PASSWORD ?</label></a>
+                            <a class="help"><label class="label_help" >FORGOT PASSWORD ?</label></a>
                         </div>
                     </div>
                 </div>
