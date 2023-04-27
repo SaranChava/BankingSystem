@@ -88,4 +88,5 @@ if($_SESSION['customer_login'] == true)
     </div>
  <br>
     </body>
+    <?php include 'footer.html';?>
 </html>
