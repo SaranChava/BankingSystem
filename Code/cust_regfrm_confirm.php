@@ -24,7 +24,7 @@ if(!isset($_SESSION['$cust_acopening'])){
 				<span><?php echo "Email Id : ".$_SESSION['cust_email']."<br>"; ?> </span>
 				<span><?php echo "Landline : ".$_SESSION['cust_landline']."<br>"; ?> </span>
 				<span><?php echo "DOB : ".$_SESSION['cust_dob']."<br>"; ?> </span>
-				<span><?php echo "pan No : ".$_SESSION['cust_pan=']."<br>"; ?>  </span>
+				<span><?php echo "SSN No : ".$_SESSION['cust_SSN=']."<br>"; ?>  </span>
 				<span><?php echo "CITIZENSHIP No : ".$_SESSION['cust_citizenship']."<br>"; ?> </span>
 				<span><?php echo "Home Address : ".$_SESSION['cust_homeaddrs']."<br>"; ?>  </span>
 				<span><?php echo "Office Address : ".$_SESSION['cust_officeaddrs']."<br>"; ?> </span>
