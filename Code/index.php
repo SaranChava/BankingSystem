@@ -93,7 +93,7 @@
                         <a href="UserReg.php">
                             <li>New Account</li>
                         </a>
-                        <a href="debit_card_form.php"><li>Debit Card Application</li></a>
+                        <a href="EmpLogin.php"><li>Employee Login</li></a>
                         <a href="UserLogin.php"><li>User Login</li></a>
                     </ul>
                 </div>
