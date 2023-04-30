@@ -639,3 +639,14 @@ CREATE TABLE customer_service(
   `description` varchar(255),
   PRIMARY KEY (`id`)
 );
+
+Create table banner_notif(
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`status` ENUM('Active','Inactive'),
+    `banner` varchar(256),
+    PRIMARY KEY (`id`)
+);
+
+Insert Into banner_notif(status,banner) 
+values ('Active', "Our policy is to provide exceptional service and value to our customers while upholding the highest standards of integrity and ethics."),
+('Active',"Welcome to our bank, where your financial goals are our top priority.");
