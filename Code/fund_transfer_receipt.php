@@ -1,5 +1,5 @@
 <?php
-/**
+/*
 if($_SESSION[Customer_login] == FALSE ){
 
 header("location:customer_login.php");

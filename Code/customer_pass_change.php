@@ -43,6 +43,7 @@ if($_SESSION['customer_login'] != true)
 </div>
 
 </body>
+<?php include 'footer.html';?>
 </html>
 
 <?php  

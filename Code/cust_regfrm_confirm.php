@@ -24,7 +24,7 @@ if(!isset($_SESSION['$cust_acopening'])){
 				<span><?php echo "Email Id : ".$_SESSION['cust_email']."<br>"; ?> </span>
 				<span><?php echo "Landline : ".$_SESSION['cust_landline']."<br>"; ?> </span>
 				<span><?php echo "DOB : ".$_SESSION['cust_dob']."<br>"; ?> </span>
-				<span><?php echo "pan No : ".$_SESSION['cust_pan=']."<br>"; ?>  </span>
+				<span><?php echo "SSN No : ".$_SESSION['cust_SSN=']."<br>"; ?>  </span>
 				<span><?php echo "CITIZENSHIP No : ".$_SESSION['cust_citizenship']."<br>"; ?> </span>
 				<span><?php echo "Home Address : ".$_SESSION['cust_homeaddrs']."<br>"; ?>  </span>
 				<span><?php echo "Office Address : ".$_SESSION['cust_officeaddrs']."<br>"; ?> </span>
@@ -148,10 +148,8 @@ VALUES (
 '$ac_opening_date',
 'ACTIVE') ";
 
-		//Delete the application from pending_account table
 		$sql2 = "DELETE FROM pending_accounts Where Application_no = '$application_no' ";
 
-		//Create Passbook table of the customer
 		$sql3 = "CREATE TABLE passbook_$customer_id
 		(id INT(255) AUTO_INCREMENT PRIMARY KEY, 
 		Transaction_id VARCHAR(255) NULL,
@@ -162,7 +160,6 @@ VALUES (
 		Net_Balance VARCHAR(255) NULL,
 		Remark VARCHAR(255) NULL)";
 
-		//Create Beneficiary table of the customer
 		$sql4 = "CREATE TABLE beneficiary_$customer_id (id INT(255) AUTO_INCREMENT PRIMARY KEY, 
 		Beneficiary_name VARCHAR(255) NULL,
 		Beneficiary_ac_no VARCHAR(255) NULL,
@@ -173,7 +170,6 @@ VALUES (
 
 		
 
-		//If all the query is TRUE then issue commit else rollback 
 		if($conn->query($sql1) == TRUE && $conn->query($sql2) == TRUE  && $conn->query($sql3) == TRUE  && $conn->query($sql4) == TRUE){
 			
 			$transaction_id = mt_rand(100,999).mt_rand(1000,9999).mt_rand(10,99);

@@ -618,7 +618,7 @@ ALTER TABLE `passbook_1011950`
 ALTER TABLE `staff`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
-drop table loan_requests;
+
 CREATE TABLE loan_requests (
   `id` INT NOT NULL AUTO_INCREMENT,
   `type_of_loan` ENUM('educational', 'home', 'vehicle', 'business', 'personal') NOT NULL,
@@ -630,3 +630,23 @@ CREATE TABLE loan_requests (
 );
 
 INSERT INTO loan_requests (type_of_loan, loan_amount, annual_income, Customer_id) VALUES ("educational",1000,500,1);
+
+CREATE TABLE customer_service(
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `status` ENUM('pending', 'resolved') NOT NULL default 'pending',
+  `type` ENUM('credit','payment','loan','other') default 'other',
+  `title` varchar(255) NOT NULL,
+  `description` varchar(255),
+  PRIMARY KEY (`id`)
+);
+
+Create table banner_notif(
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`status` ENUM('Active','Inactive'),
+    `banner` varchar(256),
+    PRIMARY KEY (`id`)
+);
+
+Insert Into banner_notif(status,banner) 
+values ('Active', "Our policy is to provide exceptional service and value to our customers while upholding the highest standards of integrity and ethics."),
+('Active',"Welcome to our bank, where your financial goals are our top priority.");

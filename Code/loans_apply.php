@@ -90,4 +90,5 @@ background-color: rgba(5, 21, 71,0.4);
                 ?>
         </div>
     </body>
+    <?php include 'footer.html';?>
 </html>

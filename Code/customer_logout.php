@@ -2,7 +2,6 @@
 	session_start();
 	
 	include 'database_conn.php';
-	// Update date & time
 	
 	$customer_id=$_SESSION['customer_Id'] ;
 	$this_login=$_SESSION['this_login'];
